@@ -1,0 +1,241 @@
+.contact,
+.contact * {
+  box-sizing: border-box;
+}
+.contact {
+  background: #000000;
+  align-self: stretch;
+  flex-shrink: 0;
+  display: grid;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+.tia-tran {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute;
+  left: 80px;
+  top: 45px;
+  width: 518px;
+  height: 158px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.frame-7 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1176px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.frame-6 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-5 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-4 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 50px;
+  position: relative;
+}
+.frame-3 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 792px;
+  top: 17px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.home {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 999px;
+  top: 17px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.about {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-1 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 1188px;
+  top: 17px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.contact2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+}
+.ta-contact-abhi-gupta-agupta-09-umd-edu-samiha-meah-smeah-umd-edu-zam-mozumder-zam-umd-edu {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 400;
+  position: absolute;
+  left: 80px;
+  top: 457px;
+  width: 1235px;
+  height: 220px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.rectangle-1 {
+  background: #a8ff35;
+  width: 180px;
+  height: 57px;
+  position: absolute;
+  left: 630px;
+  top: 713px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.get-started {
+  color: #000000;
+  text-align: center;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 487px;
+  top: 661px;
+  width: 465px;
+  height: 162px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.frame-8 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 488px;
+  top: 908px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.tia-tran-university-of-maryland-fall-2025 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-us {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 855px);
+  top: calc(50% - 405px);
+  width: 706px;
+  height: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.professor-contact-tia-tran-tia-0919-umd-edu {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 80px;
+  top: 250px;
+  width: 930px;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}

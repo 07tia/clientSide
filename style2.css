@@ -1,0 +1,248 @@
+.about-page,
+.about-page * {
+  box-sizing: border-box;
+}
+.about-page {
+  background: #000000;
+  align-self: stretch;
+  flex-shrink: 0;
+  display: grid;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+.tia-tran {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute;
+  left: 80px;
+  top: 45px;
+  width: 518px;
+  height: 158px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.frame-7 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1176px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.frame-6 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-5 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-4 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 50px;
+  position: relative;
+}
+.frame-3 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 792px;
+  top: 17px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.home {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 999px;
+  top: 17px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.about {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-1 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 1188px;
+  top: 17px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.contact {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+}
+.professor-paul-t-shapiro-teaching-assistants-abhi-gupta-samiha-meah-zam-mozumder-semester-details-fall-2025 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 400;
+  position: absolute;
+  left: 80px;
+  top: 517px;
+  width: 1235px;
+  height: 160px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.professor-paul-t-shapiro-teaching-assistants-abhi-gupta-samiha-meah-zam-mozumder-semester-details-fall-2025-span {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-weight: 700;
+}
+.professor-paul-t-shapiro-teaching-assistants-abhi-gupta-samiha-meah-zam-mozumder-semester-details-fall-2025-span2 {
+  font-family: "Montserrat-Regular", sans-serif;
+}
+.rectangle-1 {
+  background: #a8ff35;
+  width: 180px;
+  height: 57px;
+  position: absolute;
+  left: 630px;
+  top: 713px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.get-started {
+  color: #000000;
+  text-align: center;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 487px;
+  top: 661px;
+  width: 465px;
+  height: 162px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.frame-8 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 488px;
+  top: 908px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.tia-tran-university-of-maryland-fall-2025 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.budt-748-industry-practicum {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 774px);
+  top: calc(50% - 411px);
+  width: 1109px;
+  height: 203px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.budt-748-is-the-capstone-course-for-information-systems-is-majors {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: -18px;
+  top: 203px;
+  width: 1315px;
+  height: 159px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
