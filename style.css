@@ -26,21 +26,27 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* ---------- Top navigation ---------- */
+/* Top navigation pinned to the right */
 .top-nav {
   position: absolute;
   top: 17px;
-  right: 80px;
+  right: 80px;              /* distance from right edge */
   display: flex;
-  gap: 48px;
+  gap: 48px;                /* space between the links */
+  justify-content: flex-end;
   align-items: center;
 }
+
 .top-nav a {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 400;
   color: #ffffff;
+  text-decoration: none;
 }
+
 .top-nav a:hover { opacity: 0.85; }
+
 
 /* ---------- Heading / hero ---------- */
 .tia-tran {
