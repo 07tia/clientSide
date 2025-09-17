@@ -1,22 +1,35 @@
-.home,
-.home * {
-  box-sizing: border-box;
+/* --- Base fixes so the white area disappears --- */
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  background: #000;           /* full-page black */
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Montserrat", system-ui, -apple-system, Arial, sans-serif;
 }
+
+.home,
+.home * { box-sizing: border-box; }
+
 .home {
   background: #000000;
+  min-height: 100vh;          /* ensures page has height */
+  position: relative;         /* needed because children are absolutely positioned */
+  overflow-x: hidden;         /* prevent sideways scroll from large heading */
   align-self: stretch;
   flex-shrink: 0;
   display: grid;
   gap: 10px;
-  position: relative;
-  overflow: hidden;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
+
+/* --- Your original export styles --- */
 .tia-tran {
   color: #ffffff;
   text-align: left;
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 64px;
   font-weight: 400;
   position: absolute;
@@ -27,6 +40,7 @@
   grid-column: 0 / span 1;
   grid-row: 0 / span 1;
 }
+
 .frame-7 {
   padding: 10px;
   display: flex;
@@ -42,17 +56,8 @@
   grid-column: 0 / span 1;
   grid-row: 0 / span 1;
 }
-.frame-6 {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-}
+
+.frame-6,
 .frame-5 {
   padding: 10px;
   display: flex;
@@ -64,6 +69,7 @@
   flex-shrink: 0;
   position: relative;
 }
+
 .frame-4 {
   padding: 10px;
   display: flex;
@@ -75,60 +81,22 @@
   flex-shrink: 0;
   position: relative;
 }
+
 .lets-create-a-web-design {
   color: #ffffff;
   text-align: center;
-  font-family: "Montserrat-Bold", sans-serif;
-  font-size: 72px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  font-size: clamp(2.2rem, 5vw + 1rem, 4.5rem); /* responsive ~72px max */
   position: relative;
   width: 1096px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.frame-3 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 792px;
-  top: 17px;
-  grid-column: 0 / span 1;
-  grid-row: 0 / span 1;
-}
-.home2 {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Montserrat-Regular", sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  position: relative;
-}
-.frame-2 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 999px;
-  top: 17px;
-  grid-column: 0 / span 1;
-  grid-row: 0 / span 1;
-}
-.about {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Montserrat-Regular", sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  position: relative;
-}
+
+.frame-3,
+.frame-2,
 .frame-1 {
   padding: 10px;
   display: flex;
@@ -137,23 +105,31 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 1188px;
   top: 17px;
   grid-column: 0 / span 1;
   grid-row: 0 / span 1;
 }
+
+.frame-3 { left: 792px; }
+.frame-2 { left: 999px; }
+.frame-1 { left: 1188px; }
+
+.home2,
+.about,
 .contact {
   color: #ffffff;
   text-align: left;
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 400;
   position: relative;
 }
+
+/* paragraph under hero */
 .my-name-is-tia-tran-and-i-am-currently-a-masters-student-at-the-smith-school-of-business-i-am-also-a-marketing-intern {
   color: #ffffff;
   text-align: left;
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: 400;
@@ -165,33 +141,27 @@
   grid-column: 0 / span 1;
   grid-row: 0 / span 1;
 }
-.rectangle-1 {
-  background: #a8ff35;
-  width: 180px;
-  height: 57px;
+
+/* Button: replaces rectangle + text */
+.get-started-link {
   position: absolute;
   left: 630px;
   top: 713px;
-  grid-column: 0 / span 1;
-  grid-row: 0 / span 1;
-}
-.get-started {
-  color: #000000;
-  text-align: center;
-  font-family: "Montserrat-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 487px;
-  top: 661px;
-  width: 465px;
-  height: 162px;
-  display: flex;
+  width: 180px;
+  height: 57px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  grid-column: 0 / span 1;
-  grid-row: 0 / span 1;
+  background: #A8FF35;
+  color: #000;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 4px;
 }
+
+/* footer */
 .frame-8 {
   padding: 10px;
   display: flex;
@@ -205,10 +175,11 @@
   grid-column: 0 / span 1;
   grid-row: 0 / span 1;
 }
+
 .tia-tran-university-of-maryland-fall-2025 {
   color: #ffffff;
   text-align: center;
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 400;
   position: relative;
@@ -217,7 +188,7 @@
   justify-content: center;
 }
 
-
-/* navbar small tweak to match screenshot spacing */
-.navbar { border-bottom: 1px solid #222; }
+/* remove old unused blocks if they linger in the HTML */
+.rectangle-1,
+.get-started { display: none !important; }
 
