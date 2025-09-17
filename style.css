@@ -1,61 +1,222 @@
-/* base */
-*,
-*::before,
-*::after { box-sizing: border-box; }
-
-html, body { height: 100%; }
-
-body {
-  margin: 0;
-  font-family: "Montserrat", system-ui, -apple-system, Arial, sans-serif;
-  background: #000;
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
+.home,
+.home * {
+  box-sizing: border-box;
 }
-
-/* hero section */
-.hero {
-  min-height: calc(100vh - 56px - 56px);   /* viewport minus navbar + footer */
+.home {
+  background: #000000;
+  align-self: stretch;
+  flex-shrink: 0;
+  display: grid;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+.tia-tran {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute;
+  left: 80px;
+  top: 45px;
+  width: 518px;
+  height: 158px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.frame-7 {
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1176px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.frame-6 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-5 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-4 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
   align-items: center;
   justify-content: center;
-  gap: 24px;
-  padding: 48px 16px;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
 }
-
-.hero__title {
-  text-transform: uppercase;
+.lets-create-a-web-design {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 72px;
   font-weight: 700;
-  font-size: clamp(2rem, 4vw + 1rem, 4.5rem); /* scales up to ~72px */
-  margin: 0;
+  position: relative;
+  width: 1096px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.hero__subtitle {
-  max-width: 900px;
-  margin: 0 auto;
-  font-size: 1.05rem;
-  line-height: 1.5;
-  opacity: 0.9;
+.frame-3 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 792px;
+  top: 17px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
 }
-
-.hero__cta {
+.home2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 999px;
+  top: 17px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.about {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-1 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 1188px;
+  top: 17px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.contact {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+}
+.my-name-is-tia-tran-and-i-am-currently-a-masters-student-at-the-smith-school-of-business-i-am-also-a-marketing-intern {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  position: absolute;
+  left: 132px;
+  top: 586px;
+  width: 1183px;
+  height: 91px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.rectangle-1 {
+  background: #a8ff35;
   width: 180px;
   height: 57px;
-  display: inline-flex;
+  position: absolute;
+  left: 630px;
+  top: 713px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.get-started {
+  color: #000000;
+  text-align: center;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 487px;
+  top: 661px;
+  width: 465px;
+  height: 162px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.frame-8 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 488px;
+  top: 908px;
+  grid-column: 0 / span 1;
+  grid-row: 0 / span 1;
+}
+.tia-tran-university-of-maryland-fall-2025 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* footer */
-.site-footer {
-  text-align: center;
-  padding: 16px;
-  background: #111;
-  border-top: 1px solid #222;
-  font-size: 0.95rem;
-}
 
 /* navbar small tweak to match screenshot spacing */
 .navbar { border-bottom: 1px solid #222; }
