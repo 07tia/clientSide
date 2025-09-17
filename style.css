@@ -3,7 +3,7 @@ html, body { height: 100%; }
 
 body {
   margin: 0;
-  background: #000;                  /* full-page black */
+  background: #000;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   font-family: "Montserrat", system-ui, -apple-system, Arial, sans-serif;
@@ -16,14 +16,31 @@ a { text-decoration: none; color: inherit; }
 
 .home {
   background: #000;
-  min-height: 100vh;                 /* ensure page has height */
-  position: relative;                
+  min-height: 100vh;
+  position: relative;
   overflow-x: hidden;
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
+
+/* ---------- Top navigation ---------- */
+.top-nav {
+  position: absolute;
+  top: 17px;
+  right: 80px;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+.top-nav a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.top-nav a:hover { opacity: 0.85; }
 
 /* ---------- Heading / hero ---------- */
 .tia-tran {
@@ -66,5 +83,62 @@ a { text-decoration: none; color: inherit; }
   color: #fff;
   text-align: center;
   font-weight: 700;
-  font-size: clamp(2.2rem, 5vw +
+  font-size: clamp(2.2rem, 5vw + 1rem, 4.5rem);
+  width: 1096px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* ---------- Body copy ---------- */
+.my-name-is-tia-tran-and-i-am-currently-a-masters-student-at-the-smith-school-of-business-i-am-also-a-marketing-intern {
+  color: #fff;
+  text-align: left;
+  font-size: 24px; line-height: 30px;
+  font-weight: 400;
+  position: absolute;
+  left: 132px; top: 586px;
+  width: 1183px; height: 91px;
+}
+
+/* ---------- Green button ---------- */
+.get-started-link {
+  position: absolute;
+  left: 50%;
+  top: 713px;
+  transform: translateX(-50%);
+  display: inline-flex;
+  width: 180px; height: 57px;
+  align-items: center; justify-content: center;
+  background: #A8FF35;
+  color: #000;
+  font-size: 20px; font-weight: 400;
+  border-radius: 4px;
+}
+
+/* ---------- Footer ---------- */
+.frame-8 {
+  padding: 10px;
+  display: flex; gap: 10px;
+  align-items: center; justify-content: center;
+  position: absolute;
+  left: 50%; top: 908px; transform: translateX(-50%);
+}
+.tia-tran-university-of-maryland-fall-2025 {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 900px) {
+  .top-nav { right: 20px; gap: 24px; }
+  .top-nav a { font-size: 24px; }
+  .tia-tran { font-size: 40px; left: 16px; top: 20px; }
+  .my-name-is-tia-tran-and-i-am-currently-a-masters-student-at-the-smith-school-of-business-i-am-also-a-marketing-intern {
+    left: 24px; width: calc(100% - 48px);
+  }
+  .frame-8 { top: 1000px; }
+}
+
 
